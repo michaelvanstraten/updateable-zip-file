@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "updateable-zip-file"
+version = "0.0.1"
+authors = [{ name = "Michael van Straten", email = "michael@vanstraten.de" }]
+description = "A simple python package that builds on top of the standart library ZipFile, which allows user to update files inside a zip archive with ease."
+readme = "readme.md"
+requires-python = ">=3.7"
+keywords = ["zipfile"]
+license = { text = "Creative Commons" }
