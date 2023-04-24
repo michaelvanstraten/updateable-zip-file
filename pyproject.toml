@@ -11,3 +11,6 @@ readme = "readme.md"
 requires-python = ">=3.7"
 keywords = ["zipfile"]
 license = { text = "Creative Commons" }
+
+[project.urls]
+repository = "https://github.com/michaelvanstraten/updateable-zip-file"
