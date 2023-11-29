@@ -2,3 +2,4 @@ __pycache__
 build
 dist
 updateable_zip_file.egg-info
+poetry.lock

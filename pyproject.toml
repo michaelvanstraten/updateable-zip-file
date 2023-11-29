@@ -1,16 +1,19 @@
-[build-system]
-requires = ["setuptools"]
-build-backend = "setuptools.build_meta"
-
-[project]
+[tool.poetry]
 name = "updateable-zip-file"
-version = "0.0.1"
-authors = [{ name = "Michael van Straten", email = "michael@vanstraten.de" }]
+version = "0.1.0"
 description = "A simple python package that builds on top of the standart library ZipFile, which allows user to update files inside a zip archive with ease."
-readme = "readme.md"
-requires-python = ">=3.7"
+authors = ["Michael van Straten <michael@vanstraten.de>"]
+license = "Creative Commons"
 keywords = ["zipfile"]
-license = { text = "Creative Commons" }
-
-[project.urls]
+readme = "README.md"
 repository = "https://github.com/michaelvanstraten/updateable-zip-file"
+
+[tool.poetry.dependencies]
+python = ">=3.7"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
