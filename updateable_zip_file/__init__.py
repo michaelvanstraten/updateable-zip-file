@@ -36,6 +36,8 @@ class UpdateableZipFile(ZipFile):
             temp_file = self._replace[name] = self._replace.get(
                 name, tempfile.TemporaryFile()
             )
+            if isinstance(bytes, str):
+                bytes = bytes.encode("utf-8")
             temp_file.write(bytes)
         # Otherwise just act normally
         else:
